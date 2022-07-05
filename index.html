@@ -140,7 +140,7 @@
           str: str,
         };
 
-        $.post("data.php", postData, function (data) {
+        $.post("/php-test/data.php", postData, function (data) {
           // console.log(data);
           localStorage.setItem("data", data);
           let dados = JSON.parse(data);
